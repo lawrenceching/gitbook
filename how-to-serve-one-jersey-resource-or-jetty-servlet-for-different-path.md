@@ -1,5 +1,6 @@
 # How to serve one jersey resource or jetty servlet for different path
-Today I'm trying to make an endpoint accessible in different paths. Such as I can go to `http://localhost/` and `http://localhost/hello` for a same hello message. 
+
+Today I'm trying to make an endpoint accessible in different paths. Such as I can go to `http://localhost/` and `http://localhost/hello` for a same hello message.
 
 I do got some solutions.
 
@@ -7,7 +8,7 @@ I'm using Jersey over Jetty. But whether or not you're using Jetty servlet or wr
 
 Ps: I copy the code from my GitLab Snippets and will keep it update. So If you find something wrong, pls comment in GitLab
 
-### Using the regular expression in Jersey Resource
+## Using the regular expression in Jersey Resource
 
 [https://gitlab.com/snippets/1676612](https://gitlab.com/snippets/1676612)
 
@@ -86,7 +87,7 @@ public class RegexpResourceTest {
 }
 ```
 
-### Specify multiple paths for one servlet
+## Specify multiple paths for one servlet
 
 [https://gitlab.com/snippets/1676613](https://gitlab.com/snippets/1676613)
 
@@ -165,7 +166,7 @@ public class MultipleServletTest {
 }
 ```
 
-### Serve one servlet in different context handler
+## Serve one servlet in different context handler
 
 [https://gitlab.com/snippets/1676615](https://gitlab.com/snippets/1676615)
 
@@ -254,3 +255,4 @@ public class MultipleContextHandlerTest {
     }
 }
 ```
+

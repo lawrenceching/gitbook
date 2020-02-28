@@ -1,12 +1,15 @@
 # HTTP POST
+
 Compare to HTTP GET, there is a few differences in HTTP POST.  
 1. Declare POST instead of GET in the first line of request content  
-2. Declare POST content, use a blank line to separate from header part  
+2. Declare POST content, use a blank line to separate from header part
 
 There are 3 popular content types. To have a high level overview, below content demonstrates what the POST body looks like for 3 different content types.
 
 ### application/json
+
 Examples
+
 ```javascript
 fetch('/api/user', {
       method: 'POST',
@@ -19,7 +22,8 @@ fetch('/api/user', {
 ```
 
 Request Content
-```
+
+```text
 POST /api/user HTTP/1.1
 Host: localhost:8080
 Connection: keep-alive
@@ -39,7 +43,9 @@ Cookie: Idea-fe7adc80=f79c6aac-74a3-41fb-81ed-c9ffe183f414
 ```
 
 ### application/x-www-form-urlencoded
+
 Examples
+
 ```javascript
 fetch('/api/user', {
       method: 'POST',
@@ -49,7 +55,8 @@ fetch('/api/user', {
 ```
 
 Request Content
-```
+
+```text
 POST /api/user HTTP/1.1
 Host: localhost:8080
 Connection: keep-alive
@@ -68,9 +75,10 @@ Cookie: Idea-fe7adc80=f79c6aac-74a3-41fb-81ed-c9ffe183f414
 firstname=lawrence&lastname=ching
 ```
 
-
 ### form-data
+
 Examples
+
 ```javascript
 var formData = new FormData();
 
@@ -84,7 +92,8 @@ fetch('/api/user', {
 ```
 
 Request Content
-```
+
+```text
 POST /api/user HTTP/1.1
 Host: localhost:8080
 Connection: keep-alive
@@ -109,10 +118,11 @@ Content-Disposition: form-data; name="lastname"
 
 ching
 ------WebKitFormBoundaryxUeB9pX0Gf0e8WTo--
-
 ```
 
 ## References
-[1\] [https://tools.ietf.org/html/rfc7231#section-4.3.3](https://tools.ietf.org/html/rfc7231#section-4.3.3)  
-[2\] [https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)   
-[3\] [Forms in HTML documents](https://www.w3.org/TR/html401/interact/forms.html)
+
+\[1\] [https://tools.ietf.org/html/rfc7231\#section-4.3.3](https://tools.ietf.org/html/rfc7231#section-4.3.3)  
+\[2\] [https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)  
+\[3\] [Forms in HTML documents](https://www.w3.org/TR/html401/interact/forms.html)
+

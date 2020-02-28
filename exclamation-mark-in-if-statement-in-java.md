@@ -1,15 +1,12 @@
-# Shall I avoid Exclamation Mark(!) in If-Statement in Java
+# Shall I avoid Exclamation Mark\(!\) in If-Statement in Java
 
-Today I read a post that we should not use "!" in If statement in order to gain a better Perfermance.
-Because the "!" operator adds extra action for your program.
-It sounds not a good idea.
-Is it really truth?
+Today I read a post that we should not use "!" in If statement in order to gain a better Perfermance. Because the "!" operator adds extra action for your program. It sounds not a good idea. Is it really truth?
 
 I did a simple experiment.
 
 I wrote 2 Java snippets:
 
-```
+```text
 // App.java
 public final class App {
         public static void main(String[] args) {
@@ -24,12 +21,11 @@ public final class App {
 }
 ```
 
-Ran `javac App.java` and then I got `App.class`.
-Ran `javap -c App.class` to view the bytecode.
+Ran `javac App.java` and then I got `App.class`. Ran `javap -c App.class` to view the bytecode.
 
 Here it is:
 
-```
+```text
 public final class App {
   public App();
     Code:
@@ -53,9 +49,9 @@ public final class App {
 }
 ```
 
-And then I added ! in If-Statement 
+And then I added ! in If-Statement
 
-```
+```text
 public final class App {
         public static void main(String[] args) {
                 if(!App.shouldPrintMessage()) {
@@ -71,7 +67,7 @@ public final class App {
 
 Checked the bytecode
 
-```
+```text
 public final class App {
   public App();
     Code:
@@ -94,39 +90,37 @@ public final class App {
        1: ireturn
 }
 ```
-As you can see, the main difference is the `ifeq` and the `ifne`.
 
----
+As you can see, the main difference is the `ifeq` and the `ifne`.
 
 Let me tried the example exactly provided in the post I read.
 
-```
-
+```text
 public final class App {
-	public static void main(String[] args) {
-		int a = 2;
-		if(!(a <= 1)) {
-			System.out.println("Hello, wolrd");
-		}
-	}
+    public static void main(String[] args) {
+        int a = 2;
+        if(!(a <= 1)) {
+            System.out.println("Hello, wolrd");
+        }
+    }
 
 }
 
 // vs
 
 public final class App {
-	public static void main(String[] args) {
-		int a = 2;
-		if(a > 1) {
-			System.out.println("Hello, wolrd");
-		}
-	}
+    public static void main(String[] args) {
+        int a = 2;
+        if(a > 1) {
+            System.out.println("Hello, wolrd");
+        }
+    }
 }
 ```
 
 And here is the output
 
-```
+```text
 public final class App {
   public App();
     Code:
@@ -169,8 +163,8 @@ public final class App {
       15: return
 }
 ```
-They're exactly the same in bytecode level. 
 
-Two examples showed us that there is NO addtional operation even though we use "!" in If-Statement.
-And futhermore, don't forget we have runtime optimazation in Java. In 2019, I quite believe the JVM is smart enough to resolve this problem.
-So I think we can choose whatever we want in If-Statement from the readability perspective.
+They're exactly the same in bytecode level.
+
+Two examples showed us that there is NO addtional operation even though we use "!" in If-Statement. And futhermore, don't forget we have runtime optimazation in Java. In 2019, I quite believe the JVM is smart enough to resolve this problem. So I think we can choose whatever we want in If-Statement from the readability perspective.
+

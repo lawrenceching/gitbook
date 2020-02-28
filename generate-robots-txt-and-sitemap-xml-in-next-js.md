@@ -2,7 +2,8 @@
 
 > For the SEO optimization, it’s necessary to support robots.txt and sitemap so that search engineer can know your website easily. Next.js does not support robots.txt and sitemap.xml so that we need to implement by ourselves.
 
-## Server Side Render(SSR)
+## Server Side Render\(SSR\)
+
 ### sitemap.xml.js
 
 Create sitemap.xml.js under `pages/` folder. And browser accesses `http://<your-domain>/sitemap.xml`, Next.js will route the request to sitemap.xml.js. Now you can return whatever content your want in sitemap.xml.
@@ -46,11 +47,11 @@ Sitemap: https://www.imlc.me/sitemap.xml`);
 ```
 
 ## Static Export
-If you use static export feature, thing is much much more easier.
-Your static assets are generated under `out/` folder.
-So you can write a script to generate robots.txt and sitemap.xml under `out/`. I believe I don’t need to explain how to do that : ).
+
+If you use static export feature, thing is much much more easier. Your static assets are generated under `out/` folder. So you can write a script to generate robots.txt and sitemap.xml under `out/`. I believe I don’t need to explain how to do that : \).
 
 ## References
-[https://github.com/zeit/next.js/issues/751#issuecomment-526303138](https://github.com/zeit/next.js/issues/751#issuecomment-526303138)  
-[next.js/examples/with-sitemap-and-robots-express-server at canary · zeit/next.js · GitHub](https://github.com/zeit/next.js/tree/canary/examples/with-sitemap-and-robots-express-server)
-[Sitemaps - Wikipedia](https://en.wikipedia.org/wiki/Sitemaps)
+
+[https://github.com/zeit/next.js/issues/751\#issuecomment-526303138](https://github.com/zeit/next.js/issues/751#issuecomment-526303138)  
+[next.js/examples/with-sitemap-and-robots-express-server at canary · zeit/next.js · GitHub](https://github.com/zeit/next.js/tree/canary/examples/with-sitemap-and-robots-express-server) [Sitemaps - Wikipedia](https://en.wikipedia.org/wiki/Sitemaps)
+

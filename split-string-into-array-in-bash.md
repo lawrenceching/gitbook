@@ -2,7 +2,7 @@
 
 A snippet to split string into an array. And shows you how to retrieve elements from the array.
 
-```
+```text
 set -x
 
 STR="/path/to/a/config/file"
@@ -24,3 +24,4 @@ echo "#Last item ${WORDS[@]: -1}"
 
 IFS=$TMP
 ```
+

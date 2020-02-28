@@ -2,6 +2,7 @@
 
 Use `-e` parameter:
 
-```
+```text
 docker run -e CUSTOM_ENV_VAR="Hello, world" busybox /bin/sh -c "echo \$CUSTOM_ENV_VAR"
 ```
+

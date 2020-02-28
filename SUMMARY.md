@@ -19,7 +19,7 @@
 * [Java Stream API 解析 - 1](how-does-stream-work-in-java-1.md)
 * [Java Stream API 解析 - 2](how-does-stream-work-in-java-2.md)
 * [How to serve one jersey resource or jetty servlet for different path](how-to-serve-one-jersey-resource-or-jetty-servlet-for-different-path.md)
-* [设置 Yarn 淘宝代理](how-to-set-registry-to-npm-and-yarn-1.md)
+* [How to set registry for yarn](how-to-set-registry-to-npm-and-yarn-1.md)
 * [HTTP POST](http-post.md)
 * [How to inspect HTTP/2 in Wireshark](inspect-http2-in-wireshark.md)
 * [如何用 Wireshark 监听 HTTP/2 流量](inspect-http2-in-wireshark.zh-cn.md)

@@ -1,4 +1,8 @@
-# Docker 国内镜像
+---
+description: Docker/Kubernetes DockerHub、gcr.io、quay.io 国内镜像列表
+---
+
+# Docker/Kubernetes 国内镜像
 
 基于众所周知的原因，我们没法顺顺利利连上 Docker 的官方镜像。另外还有部分厂商选择把自家的镜像托管在谷歌镜像服务（gcr.io）和 quay.io 上。 本文搜集了这三家镜像源的国内镜像。自己使用下来，阿里云、中科大和 Azure 的速度都不错，下载可以跑上10mb/s。
 

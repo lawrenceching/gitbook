@@ -1,6 +1,6 @@
 # Nginx Permission denied while connecting to upstream 解决办法
 
-今天配置新服务器的时候，发现 Nginx 无法正常代理请求。请求反向代理的地址时页面显示 "504 Bad Gateway"。
+今天配置新服务器的时候，发现 Nginx 无法正常代理请求。请求反向代理的地址时页面显示 "504 Bad Gateway"。 
 
 查看 `/var/log/nginx/error.log`, 发现如下错误
 ```

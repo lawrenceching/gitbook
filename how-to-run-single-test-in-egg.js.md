@@ -38,8 +38,8 @@ describe('test/app/controller/user.test.js', () => {
 
 ### 参考文献
 
-https://github.com/eggjs/egg/blob/master/docs/source/en/core/development.md\#run-specific-test-file"  
-https://mochajs.org/\#exclusive-tests"
+https://github.com/eggjs/egg/blob/master/docs/source/en/core/development.md\#run-specific-test-file  
+https://mochajs.org/\#exclusive-tests
 
 
 

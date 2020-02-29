@@ -6,13 +6,13 @@ description: The ways to run single test or test in single file in egg.js
 
 It's quite important to know how to run specific test if you have tons of unit tests in your project. Below are 3 ways to you can use to achieve your goal.
 
-### Option 1: TESTS=test/\*\*/x.test.js npm test
+### Option 1: TESTS=test/x.test.js npm test
 
 By setting variable `TESTS`, you can run unit tests that only in a file you want.
 
 ### Option 2: npm test "test/\*\*/x.test.js"
 
-Option 2 equivalents to option 1. You can put the file path as command line argument to tell egg.js runs only unit tests in `test/*/*.test.js`
+Option 2 equivalents to option 1. You can put the file path as command line argument to tell egg.js runs only unit tests in `test/**/x.test.js`
 
 ### Option 3: describe.only\(\) and it.only\(\)
 

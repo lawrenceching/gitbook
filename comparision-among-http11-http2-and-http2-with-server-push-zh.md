@@ -17,13 +17,13 @@
 
 本例中，浏览器一共花了20秒（首页+3批API请求）加载网页。
 
-![](.gitbook/assets/image%20%283%29.png)
+![](.gitbook/assets/image%20%284%29.png)
 
 ## HTTP/2
 
 HTTP/2 最大的改进是 TCP 连接的复用。 切换到 HTTP/2 后，HTTP/1.1 中3批的 API 请求可以一并发出。总用时从20秒降低到10秒（5秒首页+5秒API请求）
 
-![](.gitbook/assets/image%20%284%29.png)
+![](.gitbook/assets/image%20%287%29.png)
 
 ## HTTP/2 Server Push
 

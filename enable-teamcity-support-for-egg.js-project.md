@@ -10,11 +10,8 @@ description: >-
 
 ### **TL;DR**
 
-To make it quick and simple, please update "cov" command in `package.json`
-
-```text
-"cov": "egg-bin cov --nyc=\"-r teamcity -r text\" --reporter mocha-teamcity-reporter",
-```
+1. **Install mocha-teamcity-reporter `npm install mocha-teamcity-reporter --save-dev`**
+2. **Update cov command in package.json `"cov": "egg-bin cov --nyc=\"-r teamcity -r text\" --reporter mocha-teamcity-reporter",`**
 
 And then run `npm run cov` or `npm run ci` .
 

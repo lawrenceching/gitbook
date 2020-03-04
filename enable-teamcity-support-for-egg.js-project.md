@@ -8,7 +8,7 @@ description: >-
 
 ![](.gitbook/assets/image%20%281%29.png)
 
-### **All in All**
+### **TL;DR**
 
 To make it quick and simple, please update "cov" command in `package.json`
 

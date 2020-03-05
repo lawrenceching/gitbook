@@ -6,7 +6,7 @@ description: >-
 
 # Enable TeamCity support for egg.js project
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%283%29.png)
 
 ### **TL;DR**
 
@@ -23,7 +23,7 @@ TeamCity is a advanced CI tool that can display and analyze the coverage and tes
 
  
 
-![](.gitbook/assets/image%20%288%29.png)
+![](.gitbook/assets/image%20%2810%29.png)
 
 To do that you have to tell TeamCity how to detect those information from build log. There are reporters call teamcity reporters that print cov. and test cases information in a certain partern that TeamCity knows. It looks like:
 

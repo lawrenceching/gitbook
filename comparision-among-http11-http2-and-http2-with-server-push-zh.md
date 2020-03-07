@@ -17,19 +17,19 @@
 
 本例中，浏览器一共花了20秒（首页+3批API请求）加载网页。
 
-![](.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image%20%288%29.png)
 
 ## HTTP/2
 
 HTTP/2 最大的改进是 TCP 连接的复用。 切换到 HTTP/2 后，HTTP/1.1 中3批的 API 请求可以一并发出。总用时从20秒降低到10秒（5秒首页+5秒API请求）
 
-![](.gitbook/assets/image%20%289%29.png)
+![](.gitbook/assets/image%20%2812%29.png)
 
 ## HTTP/2 Server Push
 
 HTTP/2 的 Server Push 机制允许服务器端推送资源到客户端而不用等待浏览器请求。 本例中，在加载首页的5秒里，服务器把15篇文章的内容推送到客户端。进而把网站加载时间从10秒降低到5秒。
 
-![](.gitbook/assets/image%20%287%29.png)
+![](.gitbook/assets/image%20%2810%29.png)
 
 瀑布图中可以看出，除了加载首页的5秒，后续的 API 请求几乎不耗时间。浏览器收到服务端的推送后，会缓存起来。 当后续的 API 请求发出后，浏览器先检查缓存，如果缓存有对应的请求响应，就直接返回缓存的内容。
 

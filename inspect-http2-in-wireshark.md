@@ -57,11 +57,13 @@ Open [https://localhost:8443/](https://localhost:8443/) in Chrome, now you can s
 
 Next step, you need to tell Wireshark where the file is. Open the Preference panel, on the left side menu, go to Protocols -&gt; TLS, and configure the field “\(Pre\)-Master-Secret log filename”.
 
-![](https://github.com/lawrenceching/gitbook/tree/08ca4a5916c8a2e72e3b5fa1ed045f6801420062/static/A03463B7-48F3-44D1-B7CA-60D793ADEF01.png)
+![](.gitbook/assets/image%20%284%29.png)
 
 ### Inspect HTTP/2 Request
 
 Now get back to the home page, select the loopback interface to capture. ![](https://github.com/lawrenceching/gitbook/tree/08ca4a5916c8a2e72e3b5fa1ed045f6801420062/static/5FEE5BF0-2499-4749-AEF6-98C971596CF7.png)
+
+![](.gitbook/assets/image%20%283%29.png)
 
 Set a `tcp.port == 8443` filter to prevent noise requests flow in.
 
@@ -71,5 +73,5 @@ Ok, now you’re ready to inspect the HTTP/2 Request. Access [https://localhost:
 
 Several HTTP/2 requests show up in the screen. You can see the features only in HTTP2, such as SETTINGS, HEADERS, and DATA stream. You can see the Stream ID which is the key for multiplexing. ![](https://github.com/lawrenceching/gitbook/tree/08ca4a5916c8a2e72e3b5fa1ed045f6801420062/static/810F0EE9-0154-41B0-B6EB-88B6B446D092.png)
 
-## HTTP/2 \#Wireshark
+![](.gitbook/assets/image%20%286%29.png)
 

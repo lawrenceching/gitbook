@@ -59,7 +59,7 @@ export SSLKEYLOGFILE=/<path-to-somewhere>/sslkeylogfile
 
 Protocols -&gt; TLS, and configure the field -&gt; \(Pre\)-Master-Secret log filename
 
-![](.gitbook/assets/image%20%284%29.png)
+![](.gitbook/assets/image%20%287%29.png)
 
 ### Inspect HTTP/2 Request
 
@@ -67,13 +67,13 @@ Protocols -&gt; TLS, and configure the field -&gt; \(Pre\)-Master-Secret log fil
 
 回到 Wireshark 主页，选择 Loopback 接口。
 
-![](.gitbook/assets/image%20%283%29.png)
+![](.gitbook/assets/image%20%285%29.png)
 
 输入 `tcp.port == 8443` 过滤器，避免捕捉到太多无关的流量。
 
 刷新一下 [https://localhost:8443/](https://localhost:8443/) HTTP/2 流量跃然屏幕上。
 
-![](.gitbook/assets/image%20%289%29.png)
+![](.gitbook/assets/image%20%2812%29.png)
 
 如果你看到不 TCP 的初始的几个报文（例如三次握手），你可能需要重启一下服务器程序以便已有断开 TCP 链接。
 

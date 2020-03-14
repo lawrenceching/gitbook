@@ -1,21 +1,43 @@
+---
+description: An alternative way to establish TCP tunnel or port forwarding for frp.
+---
+
 # Create TCP Tunnel/Port Forwarding by SSH
 
-Let's assume that you're going to expose your service to outside of the world. Let's say:
-
-1. You have a server `example.com` which can be access from the Internet
-2. You have two servers 192.168.0.100 and 192.168.0.101 at home.
-3. Your internal service is running under http://192.168.0.101:10080
-4. You want guests can access your service by http://example.com:8080
-
 ### Remote Port Forwarding
+
+The request `http://example.com:8080` will be passed to `192.168.0.101:10080`.
+
+![](.gitbook/assets/image%20%2813%29.png)
 
 ```bash
 # -N: Do not execute a remote command. This is useful for just forwarding ports
 # -R: Specifies that the given port on the remote (server) host is to be forwarded to the given host and port on the local side.
-ssh -N -R 8080:example.com:10080 <username>@example.com
+ssh -N -R 8080:192.168.0.101:10080 <username>@example.com
 ```
 
-![](.gitbook/assets/image.png)
+### 
+
+### Local Port Forwarding
+
+The request `http://192.168.0.100:10080` will be passed to `10.0.0.161:8080`
+
+```bash
+# -N: Do not execute a remote command. This is useful for just forwarding ports
+# -L: Specifies that the given port on the local (client) host is to be forwarded to the given host and port on the remote side. 
+ssh -N -L 10080:example.com:8080 <username>@example.com
+```
+
+![](.gitbook/assets/image%20%2811%29.png)
+
+### Notes
+
+You can change target ip/domain name to any other address, such as localhost or other location that server can access.
+
+ssh -N -R 8080:localhost:10080 &lt;username&gt;@example.com  
+ssh -N -R 8080:google.com:80 &lt;username&gt;@example.com
+
+are both valid.
 
 ### References
 

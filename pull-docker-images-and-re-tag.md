@@ -24,7 +24,3 @@ docker rmi gcr.azk8s.cn/google_containers/$imageName
 done
 ```
 
-{% page-ref page="pull-docker-images-and-re-tag.md" %}
-
-
-

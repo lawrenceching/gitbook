@@ -51,7 +51,7 @@ And then run `systemctl enable ssh_rdp_forwarding` and `systemctl start ssh_rdp_
 
 Now things get ready. You can rdp to your local Windows by connecting to `us1.example.com:5200`
 
-![](.gitbook/assets/image%20%2814%29.png)
+![](.gitbook/assets/image%20%2815%29.png)
 
 
 

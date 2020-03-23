@@ -38,4 +38,5 @@
 * [Enable TeamCity support for egg.js project](enable-teamcity-support-for-egg.js-project.md)
 * [Create TCP Tunnel/Port Forwarding by SSH](create-tcp-tunnel-port-forwarding-by-ssh.md)
 * [Pull Docker Images and Re-Tag](pull-docker-images-and-re-tag.md)
+* [Expose RDP service by SSH port forwarding](expose-rdp-service-by-ssh-port-forwarding.md)
 

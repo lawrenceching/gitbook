@@ -73,7 +73,7 @@ Protocols -&gt; TLS, and configure the field -&gt; \(Pre\)-Master-Secret log fil
 
 刷新一下 [https://localhost:8443/](https://localhost:8443/) HTTP/2 流量跃然屏幕上。
 
-![](.gitbook/assets/image%20%2816%29.png)
+![](.gitbook/assets/image%20%2817%29.png)
 
 如果你看到不 TCP 的初始的几个报文（例如三次握手），你可能需要重启一下服务器程序以便已有断开 TCP 链接。
 

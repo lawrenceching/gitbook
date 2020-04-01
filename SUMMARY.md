@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [How to install frp client in Kubernetes](how-to-install-frp-client-in-kubernetes.md)
 * [How to enable mutual authentication in Jetty server](how-to-enable-mutual-authentication-in-jetty-server.md)
 * [在国内如何拉取 quay.io 的镜像](zai-guo-nei-ru-he-la-qu-quay.io-de-jing-xiang.md)
 * [How to set registry to NPM and Yarn](how-to-set-registry-to-npm-and-yarn.md)

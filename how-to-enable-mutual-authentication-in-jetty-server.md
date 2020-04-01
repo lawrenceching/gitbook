@@ -39,6 +39,12 @@ keytool -genkey -alias client -keyalg RSA -keypass changeit -storepass changeit 
 keytool -export -alias client -storepass changeit -file client.cer -keystore client.jks
 keytool -import -file ./client.cer -alias client -keystore server_truststore.jks
 
+# You you can convert them to PKCS12 or PEM format
+keytool -importkeystore -srckeystore client.jks -destkeystore client.p12 -srcalias client -srcstoretype jks -deststoretype pkcs12
+openssl pkcs12 -in client.p12 -nokeys -out client.crt
+openssl pkcs12 -in client.p12 -nocerts -nodes -out client.key
+
+
 ```
 
 ### Configurate Client Certificate in Jetty Server
@@ -75,6 +81,10 @@ openssl pkcs12 -in client.p12 -nocerts -nodes -out client.key
 curl -v -k https://localhost:8443 \
   --cert ./client.crt \
   --key ./client.key
+  
+# Or
+curl -v -k --cert-type=P12 --cert ./client.p12 \
+   https://localhost:8443
 ```
 
 #### Java HTTP Client

@@ -1,4 +1,4 @@
-# How to install frp client in Kubernetes
+# 在 Kubernetes 集群中如何部署 frpc
 
 本文假设：
 

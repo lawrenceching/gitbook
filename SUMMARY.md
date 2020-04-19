@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Helm - zsh: no matches found: imagePullSecrets\[0\].name=regcred](helm-zsh-no-matches-found-imagepullsecrets-0-.name-regcred.md)
 * [Helm - Pull image from private repository](helm-pull-image-from-private-repository.md)
 * [How to install frp client in Kubernetes](how-to-install-frp-client-in-kubernetes.md)
 * [How to enable mutual authentication in Jetty server](how-to-enable-mutual-authentication-in-jetty-server.md)

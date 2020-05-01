@@ -8,4 +8,6 @@
 * [如何设置 yarn 中国 registry](ru-he-she-zhi-yarn-zhong-guo-registry.md)
 * [GB/T 28448-2019 信息安全技术网络安全等级保护测评要求](gbt-284482019-xin-xi-an-quan-ji-shu-wang-luo-an-quan-deng-ji-bao-hu-ce-ping-yao-qiu.md)
 * [egg.js 如何运行指定的单元测试](how-to-run-single-test-in-egg.js.md)
+* [FY6 Archive](fy6-archive/README.md)
+  * [《风色幻想6》全支线任务攻略](fy6-archive/feng-se-huan-xiang-6-quan-zhi-xian-ren-wu-gong-lve.md)
 

@@ -22,7 +22,7 @@ So set `suspend` to `y` if you need to debug application initialization phase.
 
 I believe all IDEs have that function to debug Java application remotely. I use IntelliJ here for demonstration.
 
-![remote debugging in IntelliJ IDEA](.gitbook/assets/image%20%283%29.png)
+![remote debugging in IntelliJ IDEA](.gitbook/assets/image%20%281%29%20%281%29.png)
 
 Add a new configuration under Remote category, you will see IntelliJ provides command line arguments for you. That's exactly what I show in previous section.
 

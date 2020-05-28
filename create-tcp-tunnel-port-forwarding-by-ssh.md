@@ -8,7 +8,7 @@ description: An alternative way to establish TCP tunnel or port forwarding for f
 
 The request `http://example.com:8080` will be passed to `192.168.0.101:10080`.
 
-![](.gitbook/assets/image%20%2814%29.png)
+![](.gitbook/assets/image%20%2813%29.png)
 
 ```bash
 # -N: Do not execute a remote command. This is useful for just forwarding ports
@@ -28,7 +28,7 @@ The request `http://192.168.0.100:10080` will be passed to `10.0.0.161:8080`
 ssh -N -L 10080:example.com:8080 <username>@example.com
 ```
 
-![](.gitbook/assets/image%20%2812%29.png)
+![](.gitbook/assets/image%20%2811%29.png)
 
 ### Notes
 

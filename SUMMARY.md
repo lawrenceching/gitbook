@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [快速解决  Kubernetes "no route to host"](kuai-su-jie-jue-kubernetes-no-route-to-host.md)
 * [在 Kubernetes 集群中如何部署 frpc](how-to-install-frp-client-in-kubernetes.md)
 * [How to set registry to NPM and Yarn](how-to-set-registry-to-npm-and-yarn.md)
 * [创建 Kubernetes Cron 定时任务](chuang-jian-kubernetes-cron-ding-shi-ren-wu.md)

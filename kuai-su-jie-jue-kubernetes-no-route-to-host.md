@@ -16,6 +16,8 @@ systemctl start kubelet
 systemctl start docker
 ```
 
+或者你是通过 Microk8s 部署的集群，运行下方的命令
+
 ```text
 # Microk8s 集群
 microk8s stop

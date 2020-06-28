@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Zero Down Time Deployment in Kubernetes](zero-down-time-deployment-in-kubernetes.md)
 * [brew install reported "Failed to connect to 127.0.0.1 port 1087"](untitled.md)
 * [How to resolve "no route to host" in Kubernetes](how-to-resolve-no-route-to-host-in-kubernetes.md)
 * [Helm - zsh: no matches found: imagePullSecrets\[0\].name=regcred](helm-zsh-no-matches-found-imagepullsecrets-0-.name-regcred.md)

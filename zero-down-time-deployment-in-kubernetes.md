@@ -19,6 +19,8 @@ Deploy new version of application
 Warm up \(prepare data, transfer state back, JVM warm-up etc\)  
 Start to receive requests
 
+### Zero Down Time Deployment in Kubernetes
+
 In the Kubernetes environment, things are relatively easy. readinessProbe is the major feature we need.  
   
 **Stop**  

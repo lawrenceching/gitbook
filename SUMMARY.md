@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Monitoring, ElasticSearch and Grafana](monitoring-elasticsearch-and-grafana.md)
 * [Zero Down Time Deployment in Kubernetes](zero-down-time-deployment-in-kubernetes.md)
 * [brew install reported "Failed to connect to 127.0.0.1 port 1087"](untitled.md)
 * [How to resolve "no route to host" in Kubernetes](how-to-resolve-no-route-to-host-in-kubernetes.md)

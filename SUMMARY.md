@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [利用 Grafana 和 ElasticSearch 搭建一个最简单的监控系统](li-yong-grafana-he-elasticsearch-da-jian-yi-ge-zui-jian-dan-de-jian-kong-xi-tong.md)
 * [快速解决  Kubernetes "no route to host"](kuai-su-jie-jue-kubernetes-no-route-to-host.md)
 * [在 Kubernetes 集群中如何部署 frpc](how-to-install-frp-client-in-kubernetes.md)
 * [How to set registry to NPM and Yarn](how-to-set-registry-to-npm-and-yarn.md)

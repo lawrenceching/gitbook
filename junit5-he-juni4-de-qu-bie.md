@@ -4,7 +4,7 @@
 
 | 功能 | JUNIT 4 | JUNIT 5 |
 | :--- | :--- | :--- |
-| 生命一个测试 | `@Test` | `@Test` |
+| 声明一个测试 | `@Test` | `@Test` |
 | 在所有测试运行之前执行指定方法 | `@BeforeClass` | `@BeforeAll` |
 | 在所有测试运行之后执行指定方法 | `@AfterClass` | `@AfterAll` |
 | 在每个测试运行前执行指定方法 | `@Before` | `@BeforeEach` |

@@ -4,21 +4,19 @@ description: 如何在 Bash 中加减称呼
 
 # 如何在 Bash 中执行数值计算
 
-
-
-| Arithmetic Operator | Description |
+| 操作符 | 描述 |
 | :--- | :--- |
-| id++, id-- | variable post-increment, post-decrement |
-| ++id, --id | variable pre-increment, pre-decrement |
-| -, + | unary minus, plus |
-| !, ~ | logical and bitwise negation |
-| \*\* | exponentiation |
-| \*, /, % | multiplication, division, remainder \(modulo\) |
-| +, - | addition, subtraction |
-| &lt;&lt;, &gt;&gt; | left and right bitwise shifts |
-| &lt;=, &gt;=, &lt;, &gt; | comparison |
-| ==, != | equality, inequality |
-| & | bitwise AND |
+| id++, id-- | 运算后自增 |
+| ++id, --id | 自增后运算 |
+| -, + | 符号（1, -1, +1） |
+| !, ~ | 逻辑取反、按位取反 |
+| \*\* | 求幂 |
+| \*, /, % | 乘法、除法、求余 |
+| +, - | 加减 |
+| &lt;&lt;, &gt;&gt; | 左移、右移 |
+| &lt;=, &gt;=, &lt;, &gt; | 算术比较 |
+| ==, != |  |
+| & | sdfbitwise AND |
 | ^ | bitwise XOR |
 | \| | bitwise OR |
 | && | logical AND |
@@ -48,10 +46,9 @@ false=0
 echo "\!$true=$((! true))  \!$false=$((! false))"
 echo "$true&&$true=$((true&&true))"
 echo "$true&&$false=$((true&&false))"
-echo "$false&&$true=$((false&&true))"
-echo "$false&&$false=$((false&&false))"
 
 echo "Result: $((true ? 1000 : 2000))"
-
 ```
+
+
 

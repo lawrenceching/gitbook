@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [How to do math in Bash](how-to-do-math-in-bash.md)
 * [Monitoring, ElasticSearch and Grafana](monitoring-elasticsearch-and-grafana.md)
 * [Zero Down Time Deployment in Kubernetes](zero-down-time-deployment-in-kubernetes.md)
 * [brew install reported "Failed to connect to 127.0.0.1 port 1087"](untitled.md)

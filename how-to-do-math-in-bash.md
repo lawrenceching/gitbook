@@ -42,8 +42,6 @@ false=0
 echo "\!$true=$((! true))  \!$false=$((! false))"
 echo "$true&&$true=$((true&&true))"
 echo "$true&&$false=$((true&&false))"
-echo "$false&&$true=$((false&&true))"
-echo "$false&&$false=$((false&&false))"
 
 echo "Result: $((true ? 1000 : 2000))"
 

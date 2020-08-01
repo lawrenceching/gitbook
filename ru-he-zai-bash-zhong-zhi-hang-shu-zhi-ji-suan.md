@@ -15,14 +15,14 @@ description: 如何在 Bash 中加减称呼
 | +, - | 加减 |
 | &lt;&lt;, &gt;&gt; | 左移、右移 |
 | &lt;=, &gt;=, &lt;, &gt; | 算术比较 |
-| ==, != |  |
-| & | sdfbitwise AND |
-| ^ | bitwise XOR |
-| \| | bitwise OR |
-| && | logical AND |
-| \|\| | logical OR |
-| expression ? expression : expression | conditional operator |
-| =, \*=, /=, %=, +=, -=, &lt;&lt;=, &gt;&gt;=, &=, ^=, \|= | assignment |
+| ==, != | 相等、不等 |
+| & | 按位于 |
+| ^ | 按位异或 |
+| \| | 按位于或 |
+| && | 逻辑与 |
+| \|\| | 逻辑或 |
+| expression ? expression : expression | 三目运算 |
+| =, \*=, /=, %=, +=, -=, &lt;&lt;=, &gt;&gt;=, &=, ^=, \|= | 运算后赋值 |
 
 ```text
 let sum=1+2+3+4

@@ -1,5 +1,5 @@
 ---
-description: 如何在 Bash 中加减称呼
+description: 如何在 Bash 中加减乘除
 ---
 
 # 如何在 Bash 中执行数值计算
@@ -49,6 +49,4 @@ echo "$true&&$false=$((true&&false))"
 
 echo "Result: $((true ? 1000 : 2000))"
 ```
-
-
 

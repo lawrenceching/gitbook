@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Java 如何测量代码执行时间](java-ru-he-ce-liang-dai-ma-zhi-hang-shi-jian.md)
 * [如何在 Bash 中执行数值计算](ru-he-zai-bash-zhong-zhi-hang-shu-zhi-ji-suan.md)
 * [JUnit5 和 JUni4 的区别](junit5-he-juni4-de-qu-bie.md)
 * [利用 Grafana 和 ElasticSearch 搭建一个最简单的监控系统](li-yong-grafana-he-elasticsearch-da-jian-yi-ge-zui-jian-dan-de-jian-kong-xi-tong.md)

@@ -25,7 +25,7 @@ long used = end - start;
 
 ```text
 long startTime = System.nanoTime();
-// ... the code being measured ...
+doSomething();
 long elapsedNanos = System.nanoTime() - startTime
 ```
 
@@ -39,21 +39,75 @@ long elapsedMillis = elapsedNanos / 1000000
 
 ### Instant/Duration
 
-//TODO:
+Java 的 Instant 类提供了更好的时区支持和时间计算。使用 Instant 类计算执行用时也和上面的两种方法差不多。
+
+```text
+Instant start = Instant.now();
+doSomething();      
+Instant finish = Instant.now();
+long timeElapsed = Duration.between(start, finish).toMillis();
+```
 
 ### StopWatch
 
-//TODO:
+[Apache Commons Lang](https://commons.apache.org/proper/commons-lang/) 是一个非常常用的工具类库。它提供了一个专门用于计算执行时间的工具类—— StopWatch。StopWatch 不仅提供了 start\(\), stop\(\) 和 getTime\(\) 的基础方法，还提供了 split\(\), getSplitTime\(\), suspend\(\) 和 resume\(\) 以完成更复杂的计时操作。
+
+```text
+StopWatch stopWatch = new StopWatch();
+
+stopWatch.start();
+doSomething();
+
+stopWatch.split();
+System.out.println("Used " + stopWatch.getSplitTime() + " ms");
+
+stopWatch.suspend();
+doSomething();
+stopWatch.resume();
+
+stopWatch.stop();
+System.out.println("Used " + stopWatch.getTime() + " ms in total");
+```
 
 ## 记录
 
 ### 直接输出到日志或文件
 
+测出代码执行时间后，自然是要把时间记录下来。最普通也就常用的方法，自然是直接写日志。无论是直接输出到 stdout，还是直接写文件，都能满足大部分的应用场景。如果直接把日志输出到 stdout ，还可以通过重定向（`"java -jar hello.jar > output.log"`）持久化日志。
+
+当日志太频繁，写日志这件事本身会影响程序执行效率。此时就要想办法降低写日志对性能的影响。
+
 ### 异步日志
+
+就日志而言，最常用的当然是利用 logback 的 AsyncAppender。
+
+如果写日志太频繁，logger.info\(\) 本身就会卡在 IO 上。顺利成章，不能同步，那就异步。
+
+与此同时，也必须注意到异步日志方案本身的一点小问题：
+
+1、不同日志间的先后顺序可能会打乱。  
+2、如果 CPU 已经用满，日志可能会来不及打印。  
+3、如果磁盘IO已经用满，日志可能会因为来不及打印而堆积在内存里，有潜在的 OOM 风险。
 
 ### 批量写入
 
+正如你在日常拷贝文件的时候发现，大文件的拷贝速度比大量零碎文件的拷贝要快好。所以频发而小量地写日志，效率并不高。这种情况在把日志通过 HTTP 或 TCP 协议上传到远端服务器，就更为严重。
+
+如果是写日志，为了提高效率，我们通常把多个时间合并到一起输出。例如每100个请求输出一行：
+
+```text
+12,11,8,12,17,5,2,34,26,11,123,25,21,21,.....
+```
+
+甚至，你可以直接输出二进制格式的日志文件以追求最高效率。
+
+而远程日志上报方案，一样采取相同的思路。通过在客户端或者日志网关中收集日志，然后批量上传到日志服务器中。
+
+
+
 ### 分盘
+
+如果一块盘速度不够，那同时写入两块盘，岂不是速度翻倍！（我只在测试环境见过这种骚操作，不确定是否有用在生产环境的案例）。
 
 ## 分析
 

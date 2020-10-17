@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [TeamCity is reporting "Unmet requirements: docker.server.version exists"](teamcity-is-reporting-unmet-requirements-docker.server.version-exists.md)
 * [How to do math in Bash](how-to-do-math-in-bash.md)
 * [Monitoring, ElasticSearch and Grafana](monitoring-elasticsearch-and-grafana.md)
 * [Zero Down Time Deployment in Kubernetes](zero-down-time-deployment-in-kubernetes.md)

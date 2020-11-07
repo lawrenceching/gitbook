@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [如何安装 JITWatch](如何安装%20JITWatch.md)
 * [如何解压 tar.xz 文件](ru-he-jie-ya-tar.xz-wen-jian.md)
 * [Java JUnit5 单元测试参数化](java-junit5-dan-yuan-ce-shi-can-shu-hua.md)
 * [Mockito @Mock, @Spy, @Captor 简介](mockito-mock-spy-captor-jian-jie.md)

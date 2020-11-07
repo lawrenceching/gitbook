@@ -2,7 +2,7 @@
 
 JITWatch 是一款用于分析和可视化 HotSpot JIT Compiler 的工具。JITWatch 是基于 JavaFX 开发的。而 2020 年的现在，可能很多人已经不选择 Oracle JDK 作为默认的 JDK 版本，而其他版本的 JDK 可能没有自带 JavaFX 包，安装和使用 JITWatch 会稍显麻烦。
 
-## TL;DR
+### TL;DR
 
 ```bash
 # 获取源代码

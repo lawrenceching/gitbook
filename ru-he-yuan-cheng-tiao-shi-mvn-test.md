@@ -20,5 +20,8 @@ Listening for transport dt_socket at address: 5005
 
 ![](.gitbook/assets/image%20%2829%29.png)
 
+如果要修改 debugger 端口，可以提供 address 参数给 `maven.surefire.debug` ，如下方所示：
 
-
+```
+mvn -Dmaven.surefire.debug="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 -Xnoagent -Djava.compiler=NONE" test
+```
